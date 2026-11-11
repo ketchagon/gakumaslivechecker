@@ -226,7 +226,7 @@ document.getElementById("share-x-button").addEventListener("click", () => {
     const progress = document.getElementById("progress-text").textContent;
 
     // 現在のページURLを取得
-    const pageUrl = window.location.href;
+    const pageUrl =　"https://ketchagon.github.io/gakumaslivechecker/?v=2";
 
     // 投稿内容
     const postText =
