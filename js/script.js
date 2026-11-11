@@ -221,3 +221,22 @@ function renderUncollectedSongs(songs) {
         container.appendChild(item);
     });
 }
+document.getElementById("share-x-button").addEventListener("click", () => {
+    // 現在の回収率を取得
+    const progress = document.getElementById("progress-text").textContent;
+
+    // 現在のページURLを取得
+    const pageUrl = window.location.href;
+
+    // 投稿内容
+    const postText =
+        `ライブでの楽曲の回収率は${progress}でした\n` +
+        `#学マスライブ回収率チェッカー\n` +
+        `${pageUrl}`;
+
+    // Xの投稿画面を開く
+    const postUrl =
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(postText)}`;
+
+    window.open(postUrl, "_blank");
+});
