@@ -1,6 +1,7 @@
 const STORAGE_KEY = "liveCollectionParticipated";
 const LANG_KEY = "liveCollectionLang";
 const LANGS = ["ja", "en", "ko", "zh"];
+const DEFAULT_LANG = LANGS[0];
 
 let lang = detectLang();
 
@@ -12,16 +13,20 @@ function detectLang() {
         const base = String(tag).toLowerCase().split("-")[0];
         if (LANGS.includes(base)) return base;
     }
-    return "en";
+    return DEFAULT_LANG;
 }
 
 function t(key, vars = {}) {
     return I18N.ui[lang][key].replace(/\{(\w+)\}/g, (_, name) => vars[name]);
 }
 
-// ツアー名・公演名。翻訳がなければ原文のまま
-function trName(name) {
-    return lang === "ja" ? name : I18N.names[name]?.[lang] ?? name;
+function getName(o) {
+    // The object may have "name.i18n" property, which contains translation maps for different languages.
+    // If it does, try to get the name in the current language. If current language is not available, fall back to the default language.
+    // In some case, the property may be a single string. Then use it as is. (POTENTIAL BUG: we cannot sure it is a valid, safe string.)
+    // If the object doesn't have "name.i18n" property, fall back to "name" property.
+    // If neither is available, return undefined.
+    return o["name.i18n"]?.[lang] ?? o["name.i18n"]?.[DEFAULT_LANG] ?? o["name.i18n"] ?? o["name"] ?? undefined;
 }
 
 function applyLanguage() {
@@ -103,7 +108,7 @@ function renderLives() {
         // ツアータイトル
         const title = document.createElement("h3");
         title.className = "tour-title";
-        title.textContent = trName(tour.name);
+        title.textContent = getName(tour);
 
         // 公演カード一覧
         const cardList = document.createElement("div");
@@ -115,7 +120,7 @@ function renderLives() {
             card.className = "live-card";
 
             const liveTitle = document.createElement("h4");
-            liveTitle.textContent = trName(live.name);
+            liveTitle.textContent = getName(live);
 
             const date = document.createElement("p");
             date.className = "live-date";
