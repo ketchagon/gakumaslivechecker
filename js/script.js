@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded",async() => {
     }
 
     try{
-        const response = await fetch("./data/lives.json");
+        const response = await fetch("./data/gakuen.json");
 
         if(!response.ok){
             throw new Error("ライブ情報の取得に失敗しました");
