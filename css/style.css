@@ -91,6 +91,31 @@ section{
     height: 18px;
     cursor: pointer;
 }
+.show-set-list-button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 16px;
+    background-color: #5969a8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.set-list {
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    list-style-type: none;
+    display: none;
+    cursor: default;
+}
+.set-list-item {
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
 #uncollected-list {
     background: white;
     padding: 20px;

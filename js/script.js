@@ -158,7 +158,36 @@ function renderLives() {
 
             label.append(checkbox, labelText);
 
-            card.append(liveTitle, date, count, label);
+            const showSetListButton = document.createElement("button");
+            showSetListButton.className = "show-set-list-button";
+            showSetListButton.textContent = t("showSetlist");
+
+            const setList = document.createElement("ul");
+            setList.className = "set-list";
+
+            act.songs.forEach(song => {
+                const setListItem = document.createElement("li");
+                setListItem.className = "set-list-item";
+                setListItem.textContent = song;
+                setList.appendChild(setListItem);
+            });
+
+            setList.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent the card click event from firing
+            });
+
+            showSetListButton.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent the card click event from firing
+                if (setList.style.display === "none" || setList.style.display === "") {
+                    setList.style.display = "block";
+                    showSetListButton.textContent = t("hideSetlist");
+                } else {
+                    setList.style.display = "none";
+                    showSetListButton.textContent = t("showSetlist");
+                }
+            });
+
+            card.append(liveTitle, date, count, label, showSetListButton, setList);
 
             card.addEventListener("click", () => {
                 checkbox.checked = !checkbox.checked;

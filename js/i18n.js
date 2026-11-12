@@ -28,7 +28,9 @@ const I18N = {
             "attendedCheck": "参加済み",
             "allCollected": "全楽曲回収済みです",
             "loadError": "ライブ情報を読み込めませんでした",
-            "shareText": "ライブでの楽曲の回収率は{rate}でした"
+            "shareText": "ライブでの楽曲の回収率は{rate}でした",
+            "showSetlist": "楽曲一覧を表示",
+            "hideSetlist": "楽曲一覧を非表示"
         },
         "en": {
             "title": "Gakumas Live Collection Checker",
@@ -56,7 +58,9 @@ const I18N = {
             "attendedCheck": "Attended",
             "allCollected": "You've collected every song!",
             "loadError": "Couldn't load concert data",
-            "shareText": "My Gakumas concert song collection rate: {rate}"
+            "shareText": "My Gakumas concert song collection rate: {rate}",
+            "showSetlist": "Show Setlist",
+            "hideSetlist": "Hide Setlist"
         },
         "ko": {
             "title": "학원마스 라이브 회수율 체커",
@@ -84,7 +88,9 @@ const I18N = {
             "attendedCheck": "참가함",
             "allCollected": "모든 곡을 회수했습니다",
             "loadError": "라이브 정보를 불러오지 못했습니다",
-            "shareText": "라이브 곡 회수율은 {rate}였습니다"
+            "shareText": "라이브 곡 회수율은 {rate}였습니다",
+            "showSetlist": "세트리스트 표시",
+            "hideSetlist": "세트리스트 숨기기"
         },
         "zh": {
             "title": "学马仕 Live 曲目收集率检查器",
@@ -112,7 +118,9 @@ const I18N = {
             "attendedCheck": "已参加",
             "allCollected": "已收集全部曲目",
             "loadError": "无法加载 Live 信息",
-            "shareText": "我的 Live 曲目收集率为{rate}"
+            "shareText": "我的 Live 曲目收集率为{rate}",
+            "showSetlist": "Show Setlist",
+            "hideSetlist": "Hide Setlist"
         }
     }
 };
