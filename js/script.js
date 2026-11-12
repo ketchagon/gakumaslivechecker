@@ -1,10 +1,57 @@
 const STORAGE_KEY = "liveCollectionParticipated";
+const LANG_KEY = "liveCollectionLang";
+const LANGS = ["ja", "en", "ko", "zh"];
+
+let lang = detectLang();
+
+// 保存した選択 → ブラウザの言語の順に選び、対応していなければ英語
+function detectLang() {
+    const saved = localStorage.getItem(LANG_KEY);
+    if (LANGS.includes(saved)) return saved;
+    for (const tag of navigator.languages || [navigator.language]) {
+        const base = String(tag).toLowerCase().split("-")[0];
+        if (LANGS.includes(base)) return base;
+    }
+    return "en";
+}
+
+function t(key, vars = {}) {
+    return I18N.ui[lang][key].replace(/\{(\w+)\}/g, (_, name) => vars[name]);
+}
+
+// ツアー名・公演名。翻訳がなければ原文のまま
+function trName(name) {
+    return lang === "ja" ? name : I18N.names[name]?.[lang] ?? name;
+}
+
+function applyLanguage() {
+    document.documentElement.lang = lang;
+    document.title = t("title");
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        el.textContent = t(el.dataset.i18n);
+    });
+    const select = document.getElementById("lang-select");
+    select.value = lang;
+    select.setAttribute("aria-label", t("language"));
+}
 
 let lives=[];
 
 let participatedLives= new Set();
 
 document.addEventListener("DOMContentLoaded",async() => {
+    applyLanguage();
+
+    document.getElementById("lang-select").addEventListener("change", event => {
+        lang = event.target.value;
+        localStorage.setItem(LANG_KEY, lang);
+        applyLanguage();
+        if (lives.length > 0) {
+            renderLives();
+            updateResults();
+        }
+    });
+
     const saved = localStorage.getItem(STORAGE_KEY);
 
     if (saved) {
@@ -37,7 +84,7 @@ document.addEventListener("DOMContentLoaded",async() => {
         updateResults();
     } catch(error){
         console.error(error);
-        document.getElementById("live-list").textContent="ライブ情報を読み込めませんでした"
+        document.getElementById("live-list").textContent=t("loadError")
     } 
 });
 
@@ -56,7 +103,7 @@ function renderLives() {
         // ツアータイトル
         const title = document.createElement("h3");
         title.className = "tour-title";
-        title.textContent = tour.name;
+        title.textContent = trName(tour.name);
 
         // 公演カード一覧
         const cardList = document.createElement("div");
@@ -68,7 +115,7 @@ function renderLives() {
             card.className = "live-card";
 
             const liveTitle = document.createElement("h4");
-            liveTitle.textContent = live.name;
+            liveTitle.textContent = trName(live.name);
 
             const date = document.createElement("p");
             date.className = "live-date";
@@ -76,7 +123,7 @@ function renderLives() {
 
             const count = document.createElement("p");
             count.className = "live-song-count";
-            count.textContent = `収録曲：${live.songs.length}曲`;
+            count.textContent = t("songCount", { n: live.songs.length });
 
             const label = document.createElement("label");
             label.className = "live-checkbox";
@@ -86,7 +133,7 @@ function renderLives() {
             checkbox.checked = participatedLives.has(live.id);
 
             const labelText = document.createElement("span");
-            labelText.textContent = "参加済み";
+            labelText.textContent = t("attendedCheck");
 
             checkbox.addEventListener("change", () => {
 
@@ -206,7 +253,7 @@ function renderUncollectedSongs(songs) {
     if (songs.length === 0) {
 
         const message = document.createElement("p");
-        message.textContent = "全楽曲回収済みです";
+        message.textContent = t("allCollected");
         container.appendChild(message);
 
         return;
@@ -230,7 +277,7 @@ document.getElementById("share-x-button").addEventListener("click", () => {
 
     // 投稿内容
     const postText =
-        `ライブでの楽曲の回収率は${progress}でした\n` +
+        `${t("shareText", { rate: progress })}\n` +
         `#学マスライブ回収率チェッカー\n` +
         `${pageUrl}`;
 
