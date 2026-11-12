@@ -101,7 +101,7 @@ section{
         grid-template-columns: 1fr;
     }
 
-    .summary-container {
+    .container {
         grid-template-columns: repeat(2,1fr);
     }
 }
