@@ -160,6 +160,11 @@ function renderLives() {
 
             card.append(liveTitle, date, count, label);
 
+            card.addEventListener("click", () => {
+                checkbox.checked = !checkbox.checked;
+                checkbox.dispatchEvent(new Event("change"));
+            });
+
             cardList.appendChild(card);
         });
 

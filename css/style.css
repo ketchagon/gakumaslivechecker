@@ -66,6 +66,7 @@ section{
     transition: transform 0.2s;
 }
 .act-card:hover {
+    cursor: pointer;
     transform: translateY(-3px);
 }
 .act-card h3 {
