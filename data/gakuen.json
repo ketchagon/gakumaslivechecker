@@ -2,154 +2,310 @@
     {
         "id": "live01",
         "name": "DEBUT LIVE 初 TOUR",
-        "lives": [
+        "name.i18n": {
+            "ja": "DEBUT LIVE 初 TOUR",
+            "en": "DEBUT LIVE HAJIME TOUR",
+            "ko": "DEBUT LIVE 하지메 TOUR",
+            "zh": "DEBUT LIVE 初 TOUR"
+        },
+        "acts": [
             {
                 "id": "01-01",
                 "name": "初声公演 名古屋公演",
+                "name.i18n": {
+                    "ja":"初声公演 名古屋公演",
+                    "en":"UBUGOE SHOW @NAGOYA",
+                    "ko":"초성 공연 나고야 공연",
+                    "zh":"初声公演 名古屋公演"
+                },
                 "date": "2024-08-10",
                 "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","EGO","がむしゃらに行こう！","冠菊"]
             },
             {
                 "id": "01-02",
                 "name": "初声公演 梅田公演 昼",
+                "name.i18n": {
+                    "ja":"初声公演 梅田公演 昼",
+                    "en":"UBUGOE SHOW @UMEDA MATINEE",
+                    "ko":"초성 공연 우메다 공연 낮",
+                    "zh":"初声公演 梅田公演 昼"
+                },
                 "date": "2024-08-18",
                 "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","Unhappy Light","Howling over the World","冠菊"]
             },
             {
                 "id": "01-03",
                 "name": "初声公演 梅田公演 夜",
+                "name.i18n": {
+                    "ja":"初声公演 梅田公演 夜",
+                    "en":"UBUGOE SHOW @UMEDA EVENING",
+                    "ko":"초성 공연 우메다 공연 밤",
+                    "zh":"初声公演 梅田公演 夜"
+                },
                 "date": "2024-08-18",
                 "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","ふわふわ","がむしゃらに行こう！","冠菊"]
             },
             {
                 "id": "01-04",
                 "name": "初声公演 渋谷公演 昼",
+                "name.i18n": {
+                    "ja":"初声公演 渋谷公演 昼",
+                    "en":"UBUGOE SHOW @SHIBUYA MATINEE",
+                    "ko":"초성 공연 시부야 공연 낮",
+                    "zh":"初声公演 渋谷公演 昼"
+                },
                 "date": "2024-08-25",
                 "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","ふわふわ","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊"]
             },
             {
                 "id": "01-05",
                 "name": "初声公演 渋谷公演 夜",
+                "name.i18n": {
+                    "ja":"初声公演 渋谷公演 夜",
+                    "en":"UBUGOE SHOW @SHIBUYA EVENING",
+                    "ko":"초성 공연 시부야 공연 밤",
+                    "zh":"初声公演 渋谷公演 夜"
+                },
                 "date": "2024-08-25",
                 "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","Unhappy Light","EGO","Howling over the World","冠菊"]
             },
             {
                 "id": "01-06",
                 "name": "初心公演 名古屋公演 昼",
+                "name.i18n": {
+                    "ja":"初心公演 名古屋公演 昼",
+                    "en":"SHOSHIN SHOW @NAGOYA MATINEE",
+                    "ko":"초심 공연 나고야 공연 낮",
+                    "zh":"初心公演 名古屋公演 昼"
+                },
                 "date": "2024-09-07",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","Fragile Heart","がむしゃらに行こう！","冠菊"]
             },
             {
                 "id": "01-07",
                 "name": "初心公演 名古屋公演 夜",
+                "name.i18n": {
+                    "ja":"初心公演 名古屋公演 夜",
+                    "en":"SHOSHIN SHOW @NAGOYA EVENING",
+                    "ko":"초심 공연 나고야 공연 밤",
+                    "zh":"初心公演 名古屋公演 夜"
+                },
                 "date": "2024-09-07",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","ときめきのソルフェージュ","Howling over the World","冠菊"]
             },
             {
                 "id": "01-08",
                 "name": "初心公演 広島公演 昼",
+                "name.i18n": {
+                    "ja":"初心公演 広島公演 昼",
+                    "en":"SHOSHIN SHOW @HIROSHIMA MATINEE",
+                    "ko":"초심 공연 히로시마 공연 낮",
+                    "zh":"初心公演 広島公演 昼"
+                },
                 "date": "2024-09-23",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","Fragile Heart","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊"]
             },
             {
                 "id": "01-09",
                 "name": "初心公演 広島公演 夜",
+                "name.i18n": {
+                    "ja":"初心公演 広島公演 夜",
+                    "en":"SHOSHIN SHOW @HIROSHIMA EVENING",
+                    "ko":"초심 공연 히로시마 공연 밤",
+                    "zh":"初心公演 広島公演 夜"
+                },
                 "date": "2024-09-23",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","歌声は君いろ","がむしゃらに行こう！","冠菊"]
             },
             {
                 "id": "01-10",
                 "name": "初心公演 梅田公演 昼",
+                "name.i18n": {
+                    "ja":"初心公演 梅田公演 昼",
+                    "en":"SHOSHIN SHOW @UMEDA MATINEE",
+                    "ko":"초심 공연 우메다 공연 낮",
+                    "zh":"初心公演 梅田公演 昼"
+                },
                 "date": "2024-12-01",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","歌声は君いろ","Howling over the World","冠菊"]
             },
             {
                 "id": "01-11",
                 "name": "初心公演 梅田公演 夜",
+                "name.i18n": {
+                    "ja":"初心公演 梅田公演 夜",
+                    "en":"SHOSHIN SHOW @UMEDA EVENING",
+                    "ko":"초심 공연 우메다 공연 밤",
+                    "zh":"初心公演 梅田公演 夜"
+                },
                 "date": "2024-12-01",
                 "songs": ["初","Campus mode!!","白線","Wonder Scale","clumsy trick","L.U.V","日々、発見的ステップ！","Wake up!!","キミとセミブルー","ときめきのソルフェージュ","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊"]
             },
             {
                 "id": "01-12",
                 "name": "初恋公演 梅田公演 昼",
+                "name.i18n": {
+                    "ja":"初恋公演 梅田公演 昼",
+                    "en":"HATSUKOI SHOW @UMEDA MATINEE",
+                    "ko":"초련 공연 우메다 공연 낮",
+                    "zh":"初恋公演 梅田公演 昼"
+                },
                 "date": "2024-10-14",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","Top Secret","ミラクルナナウ(ﾟ∀ﾟ)！","キミとセミブルー"]
             },
             {
                 "id": "01-13",
                 "name": "初恋公演 梅田公演 夜",
+                "name.i18n": {
+                    "ja":"初恋公演 梅田公演 夜",
+                    "en":"HATSUKOI SHOW @UMEDA EVENING",
+                    "ko":"초련 공연 우메다 공연 밤",
+                    "zh":"初恋公演 梅田公演 夜"
+                },
                 "date": "2024-10-14",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","Kira Kira","Howling over the World","冠菊"]
             },
             {
                 "id": "01-14",
                 "name": "初恋公演 広島公演 昼",
+                "name.i18n": {
+                    "ja":"初恋公演 広島公演 昼",
+                    "en":"HATSUKOI SHOW @HIROSHIMA MATINEE",
+                    "ko":"초련 공연 히로시마 공연 낮",
+                    "zh":"初恋公演 広島公演 昼"
+                },
                 "date": "2024-10-19",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","コンテンポラリのダンス","がむしゃらに行こう！","キミとセミブルー"]
             },
             {
                 "id": "01-15",
                 "name": "初恋公演 広島公演 夜",
+                "name.i18n": {
+                    "ja":"初恋公演 広島公演 夜",
+                    "en":"HATSUKOI SHOW @HIROSHIMA EVENING",
+                    "ko":"초련 공연 히로시마 공연 밤",
+                    "zh":"初恋公演 広島公演 夜"
+                },
                 "date": "2024-10-19",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","Top Secret","Howling over the World","冠菊"]
             },
             {
                 "id": "01-16",
                 "name": "初恋公演 渋谷公演 昼",
+                "name.i18n": {
+                    "ja":"初恋公演 渋谷公演 昼",
+                    "en":"HATSUKOI SHOW @SHIBUYA MATINEE",
+                    "ko":"초련 공연 시부야 공연 낮",
+                    "zh":"初恋公演 渋谷公演 昼"
+                },
                 "date": "2024-10-27",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","コンテンポラリのダンス","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊"]
             },
             {
                 "id": "01-17",
                 "name": "初恋公演 渋谷公演 夜",
+                "name.i18n": {
+                    "ja":"初恋公演 渋谷公演 夜",
+                    "en":"HATSUKOI SHOW @SHIBUYA EVENING",
+                    "ko":"초련 공연 시부야 공연 밤",
+                    "zh":"初恋公演 渋谷公演 夜"
+                },
                 "date": "2024-10-27",
                 "songs": ["初","Campus mode!!","Fluorite","Tame-Lie-One-Step","光景","カクシタワタシ","コントラスト","Feel Jewel Dream","仮装狂騒曲","Kira Kira","がむしゃらに行こう！","キミとセミブルー"]
             },
             {
                 "id": "01-18",
                 "name": "初陣公演 名古屋公演 昼",
+                "name.i18n": {
+                    "ja":"初陣公演 名古屋公演 昼",
+                    "en":"UIJIN SHOW @NAGOYA MATINEE",
+                    "ko":"초진 공연 나고야 공연 낮",
+                    "zh":"初陣公演 名古屋公演 昼"
+                },
                 "date": "2025-02-08",
                 "songs": ["初","Campus mode!!","小さな野望","Fighting My Way","Choo Choo Choo","EGO","Our Chant","がむしゃらに行こう！","ENDLESS DANCE","White Night! White Wish!"]
             },
             {
                 "id": "01-19",
                 "name": "初陣公演 名古屋公演 夜",
+                "name.i18n": {
+                    "ja":"初陣公演 名古屋公演 夜",
+                    "en":"UIJIN SHOW @NAGOYA EVENING",
+                    "ko":"초진 공연 나고야 공연 밤",
+                    "zh":"初陣公演 名古屋公演 夜"
+                },
                 "date": "2025-02-08",
                 "songs": ["初","Campus mode!!","小さな野望","Fighting My Way","Choo Choo Choo","EGO","Our Chant","Howling over the World","ENDLESS DANCE","White Night! White Wish!"]
             },
             {
                 "id": "01-20",
                 "name": "初陣公演 梅田公演 昼",
+                "name.i18n": {
+                    "ja":"初陣公演 梅田公演 昼",
+                    "en":"UIJIN SHOW @UMEDA MATINEE",
+                    "ko":"초진 공연 우메다 공연 낮",
+                    "zh":"初陣公演 梅田公演 昼"
+                },
                 "date": "2025-02-11",
                 "songs": ["初","Campus mode!!","ツキノカメ","小さな野望","Fighting My Way","Choo Choo Choo","EGO","たいせつなもの","Our Chant","ミラクルナナウ(ﾟ∀ﾟ)！","ENDLESS DANCE","ハッピーミルフィーユ"]
             },
             {
                 "id": "01-21",
                 "name": "初陣公演 梅田公演 夜",
+                "name.i18n": {
+                    "ja":"初陣公演 梅田公演 夜",
+                    "en":"UIJIN SHOW @UMEDA EVENING",
+                    "ko":"초진 공연 우메다 공연 밤",
+                    "zh":"初陣公演 梅田公演 夜"
+                },
                 "date": "2025-02-11",
                 "songs": ["初","Campus mode!!","ツキノカメ","小さな野望","Fighting My Way","Choo Choo Choo","EGO","たいせつなもの","ヨルニテ","がむしゃらに行こう！","ENDLESS DANCE","ハッピーミルフィーユ"]
             },
             {
                 "id": "01-22",
                 "name": "初陣公演 渋谷公演 昼",
+                "name.i18n": {
+                    "ja":"初陣公演 渋谷公演 昼",
+                    "en":"UIJIN SHOW @SHIBUYA MATINEE",
+                    "ko":"초진 공연 시부야 공연 낮",
+                    "zh":"初陣公演 渋谷公演 昼"
+                },
                 "date": "2025-02-16",
                 "songs": ["初","Campus mode!!","ツキノカメ","小さな野望","Fighting My Way","Choo Choo Choo","EGO","たいせつなもの","Our Chant","Howling over the World","ENDLESS DANCE","White Night! White Wish!"]
             },
             {
                 "id": "01-23",
                 "name": "初陣公演 渋谷公演 夜",
+                "name.i18n": {
+                    "ja":"初陣公演 渋谷公演 夜",
+                    "en":"UIJIN SHOW @SHIBUYA EVENING",
+                    "ko":"초진 공연 시부야 공연 밤",
+                    "zh":"初陣公演 渋谷公演 夜"
+                },
                 "date": "2025-02-16",
                 "songs": ["初","Campus mode!!","ツキノカメ","小さな野望","Fighting My Way","Choo Choo Choo","EGO","たいせつなもの","ヨルニテ","ミラクルナナウ(ﾟ∀ﾟ)！","ENDLESS DANCE","ハッピーミルフィーユ"]
             },
             {
                 "id": "01-24",
                 "name": "初陣公演 東京追加公演 昼",
+                "name.i18n": {
+                    "ja":"初陣公演 東京追加公演 昼",
+                    "en":"UIJIN SHOW @TOKYO(EXTRA) MATINEE",
+                    "ko":"초진 공연 도쿄 추가 공연 낮",
+                    "zh":"初陣公演 東京追加公演 昼"
+                },
                 "date": "2025-07-04",
                 "songs": ["初","Campus mode!!","The Rolling Riceball","ツキノカメ","小さな野望","Our Chant","グースーピー","Superlative","たいせつなもの","Cosmetic","金の斧、銀の斧、エメラルドの斧","ENDLESS DANCE","White Night! White Wish!","Star-mine"]
             },
             {
                 "id": "01-25",
                 "name": "初陣公演 東京追加公演 夜",
+                "name.i18n": {
+                    "ja":"初陣公演 東京追加公演 夜",
+                    "en":"UIJIN SHOW @TOKYO(EXTRA) EVENING",
+                    "ko":"초진 공연 도쿄 추가 공연 밤",
+                    "zh":"初陣公演 東京追加公演 夜"
+                },
                 "date": "2025-07-04",
                 "songs": ["初","Campus mode!!","The Rolling Riceball","ツキノカメ","小さな野望","Our Chant","グースーピー","Superlative","ヨルニテ","Choo Choo Choo","金の斧、銀の斧、エメラルドの斧","ENDLESS DANCE","White Night! White Wish!","Star-mine"]
             }
@@ -158,16 +314,29 @@
     {
         "id": "live02",
         "name": "THE IDOLM@STER EXPO",
-        "lives": [
+        "name.i18n": "THE IDOLM@STER EXPO",
+        "acts": [
             {
                 "id": "02-01",
                 "name": "エキスポミニライブ DAY1",
+                "name.i18n": {
+                    "ja":"エキスポミニライブ DAY1",
+                    "en":"EXPO MINI LIVE DAY1",
+                    "ko":"엑스포 미니라이브 DAY1",
+                    "zh":"EXPO 迷你 Live DAY1"
+                },
                 "date": "2024-12-14",
                 "songs": ["初","Luna say maybe","光景","Wonder Scale","Campus mode!!"]
             },
             {
                 "id": "02-02",
                 "name": "エキスポミニライブ DAY2",
+                "name.i18n": {
+                    "ja":"エキスポミニライブ DAY2",
+                    "en":"EXPO MINI LIVE DAY2",
+                    "ko":"엑스포 미니라이브 DAY2",
+                    "zh":"EXPO 迷你 Live DAY2"
+                },
                 "date": "2024-12-15",
                 "songs": ["初","世界一可愛い私","Fluorite","clumsy trick","Campus mode!!"]
             }
@@ -176,10 +345,17 @@
     {
         "id": "live03",
         "name": "リスアニ！ライブ 2025",
-        "lives": [
+        "name.i18n": {
+            "ja": "リスアニ！ライブ 2025",
+            "en": "LISANI! LIVE 2025",
+            "ko": "리스아니! 라이브 2025",
+            "zh": "LISANI! LIVE 2025"
+        },
+        "acts": [
             {
                 "id": "03-01",
                 "name": "SATURDAY STAGE",
+                "name.i18n": "SATURDAY STAGE",
                 "songs": ["冠菊","アイヴイ","Luna say maybe"]
             }
         ]
@@ -187,10 +363,12 @@
     {
         "id": "live04",
         "name": "The 1st Period",
-        "lives": [
+        "name.i18n": "The 1st Period",
+        "acts": [
             {
                 "id": "04-01",
                 "name": "Spotlight Star DAY1",
+                "name.i18n": "Spotlight Star DAY1",
                 "date": "2025-05-24",
                 "songs": ["白線","Luna say maybe","Tame-Lie-One-Step","Fluorite","clumsy trick","光景","世界一可愛い私","The Rolling Riceball","Fighting My Way","Wonder Scale","ツキノカメ","小さな野望","初","たいせつなもの","コンテンポラリのダンス",
                 "歌声は君いろ","憧れをいっぱい","Kira Kira","Cosmetic","EGO","Wake up!!","Sweet Magic","ふわふわ","Unhappy Light","Superlative","古今東西ちょちょいのちょい","標","Campus mode!!","Star-mine","雨上がりのアイリス"]
@@ -198,6 +376,7 @@
             {
                 "id": "04-02",
                 "name": "Spotlight Star DAY2",
+                "name.i18n": "Spotlight Star DAY2",
                 "date": "2025-05-25",
                 "songs": ["叶えたい、ことばかり","Fighting My Way","Ride on Beat","clumsy trick","The Cute!!!","ツキノカメ","Fragile Heart","The Rolling Riceball","Fluorite","Choo Choo Choo","光景","ときめきのソルフェージュ","Campus mode!!","メクルメ","小さな野望",
                 "ヨルニテ","Wonder Scale","marble heart","Tame-Lie-One-Step","極光","Try it now","Luna say maybe","Top Secret","グースーピー","白線","世界一可愛い私","古今東西ちょちょいのちょい","標","初","Star-mine","雨上がりのアイリス"]
@@ -205,6 +384,7 @@
             {
                 "id": "04-03",
                 "name": "Harmony Star DAY1",
+                "name.i18n": "Harmony Star DAY1",
                 "date": "2025-05-31",
                 "songs": ["雨上がりのアイリス","キミとセミブルー","アイヴイ","光景","世界一可愛い私","White Night! White Wish!","みちなるひろがる","clumsy trick","Yellow Big Bang!","ENDLESS DANCE","小さな野望","Feel Jewel Dream","ツキノカメ","SUGAR FLAVOR","白線",
                 "Wonder Scale","グースーピー","Boom Boom Pow","Fluorite","Tame-Lie-One-Step","コントラスト","The Rolling Riceball","Fighting My Way","Luna say maybe","Star-mine","仮装狂騒曲","標","初","冠菊","ミラクルナナウ(ﾟ∀ﾟ)！","Campus mode!!"]
@@ -212,6 +392,7 @@
             {
                 "id": "04-04",
                 "name": "Harmony Star DAY2",
+                "name.i18n": "Harmony Star DAY2",
                 "date": "2025-06-01",
                 "songs": ["雨上がりのアイリス","clumsy trick","極光","Tame-Lie-One-Step","Luna say maybe","仮装狂騒曲","日々、発見的ステップ！","ときめきエモーション","Fluorite","Howling over the World","Wonder Scale","小さな野望","Superlative","桜フォトグラフ","光景",
                 "ツキノカメ","L.U.V","カクシタワタシ","The Rolling Riceball","雪解けに","Our Chant","Fighting My Way","白線","世界一可愛い私","Star-mine","キミとセミブルー","標","初","ハッピーミルフィーユ","がむしゃらに行こう！","Campus mode!!"]
@@ -221,16 +402,29 @@
     {
         "id": "live05",
         "name": "ORCHESTRA CONCERT SYMPHONY OF BRILLIANT STARS",
-        "lives": [
+        "name.i18n": "ORCHESTRA CONCERT SYMPHONY OF BRILLIANT STARS",
+        "acts": [
             {
                 "id": "05-01",
                 "name": "昼公演",
+                "name.i18n": {
+                    "ja": "昼公演",
+                    "en": "Matinee Show",
+                    "ko": "낮 공연",
+                    "zh": "昼公演"
+                },
                 "date": "2025-07-21",
                 "songs": ["Wonder Scale"]
             },
             {
                 "id": "05-02",
                 "name": "夜公演",
+                "name.i18n": {
+                    "ja": "夜公演",
+                    "en": "Evening Show",
+                    "ko": "밤 공연",
+                    "zh": "夜公演"
+                },
                 "date": "2025-07-21",
                 "songs": ["小さな野望"]
             }
@@ -239,16 +433,34 @@
     {
         "id": "live06",
         "name": "初星学園放送部 公開録音 2025 ~放送部の優雅で軽やかで大騒ぎな1日~",
-        "lives": [
+        "name.i18n": {
+            "ja": "初星学園放送部 公開録音 2025 ~放送部の優雅で軽やかで大騒ぎな1日~",
+            "en": "Hatsuboshi Gakuen Broadcasting Club Public Recording 2025 ~The Club's Elegant, Light, and Rowdy Day~",
+            "ko": "하츠보시 학원 방송부 공개 녹음 2025 ~방송부의 우아하고 경쾌하고 떠들썩한 하루~",
+            "zh": "初星学园广播部 公开录音 2025 ~广播部优雅轻快又热闹的一天~"
+        },
+        "acts": [
             {
                 "id": "06-01",
                 "name": "第1部:放送部の優雅で大騒ぎな1日",
+                "name.i18n": {
+                    "ja": "第1部:放送部の優雅で大騒ぎな1日",
+                    "en": "Part 1: The Club's Elegant, Rowdy Day",
+                    "ko": "제1부: 방송부의 우아하고 떠들썩한 하루",
+                    "zh": "第1部：广播部优雅又热闹的一天"
+                },
                 "date": "2025-06-15",
                 "songs": ["Ride on Beat","極光","Howling over the World","標"]
             },
             {
                 "id": "06-02",
                 "name": "第2部:放送部の軽やかで大騒ぎな1日",
+                "name.i18n": {
+                    "ja": "第2部:放送部の軽やかで大騒ぎな1日",
+                    "en": "Part 2: The Club's Light, Rowdy Day",
+                    "ko": "제2부: 방송부의 경쾌하고 떠들썩한 하루",
+                    "zh": "第2部：广播部轻快又热闹的一天"
+                },
                 "date": "2025-06-15",
                 "songs": ["L.U.V","日々、発見的ステップ！","がむしゃらに行こう！","標"]
             }
@@ -257,16 +469,24 @@
     {
         "id": "live07",
         "name": "クラス対抗初星大運動会",
-        "lives": [
+        "name.i18n": {
+            "ja": "クラス対抗初星大運動会",
+            "en": "Inter-Class Hatsuboshi Sports Festival",
+            "ko": "반 대항 하츠보시 대운동회",
+            "zh": "班级对抗初星大运动会"
+        },
+        "acts": [
             {
                 "id": "07-01",
                 "name": "DAY1",
+                "name.i18n": "DAY1",
                 "date": "2025-09-20",
                 "songs": ["標","初星体操第一","SUPREMACY","Let's GO!! ICHI-NO-NI!!","ナイワ","つよつよ最強エクササイズ","ハッピーミルフィーユ","仮装狂騒曲","がむしゃらに行こう！","Yellow Big Bang!","ENDLESS DANCE","Howling over the World","ミラクルナナウ(ﾟ∀ﾟ)！","EGO","キミとセミブルー","Campus mode!!"]
             },
             {
                 "id": "07-02",
                 "name": "DAY2",
+                "name.i18n": "DAY2",
                 "date": "2025-09-21",
                 "songs": ["標","初星体操第一","古今東西ちょちょいのちょい","SUPREMACY","Our Chant","グースーピー","世界一可愛い私","Let's GO!! ICHI-NO-NI!!","仮装狂騒曲","白線","clumsy trick","ENDLESS DANCE","ナイワ","初","SUPREMACY","Campus mode!!","理論武装して"]
             }
@@ -274,17 +494,20 @@
     },
     {
         "id": "live08",
-        "name" :"M@STARS OF IDOL WORLD 2025",
-        "lives": [
+        "name": "M@STARS OF IDOL WORLD 2025",
+        "name.i18n": "M@STARS OF IDOL WORLD 2025",
+        "acts": [
             {
                 "id": "08-01",
                 "name": "DAY1",
+                "name.i18n": "DAY1",
                 "date": "2025-12-13",
                 "songs": ["初","ハッピーミルフィーユ","雨上がりのアイリス","がむしゃらに行こう！","自己肯定感爆上げ↑↑しゅきしゅきソング","SUPREMACY","Howling over the World","Campus mode!!","アイ NEED YOU (FOR WONDERFUL STORY)"]
             },
             {
                 "id": "08-02",
                 "name": "DAY2",
+                "name.i18n": "DAY2",
                 "date": "2025-12-14",
                 "songs": ["初","つよつよ最強エクササイズ","仮装狂騒曲","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊","ENDLESS DANCE","Star-mine","Campus mode!!","キミとセミブルー","アイ NEED YOU (FOR WONDERFUL STORY)"]
             }
@@ -293,10 +516,17 @@
     {
         "id": "live09",
         "name": "初星音楽祭",
-        "lives": [
+        "name.i18n": {
+            "ja": "初星音楽祭",
+            "en": "Hatsuboshi Music Festival",
+            "ko": "하츠보시 음악제",
+            "zh": "初星音乐祭"
+        },
+        "acts": [
             {
                 "id": "09-01",
                 "name": "DAY1",
+                "name.i18n": "DAY1",
                 "date": "2026-02-28",
                 "songs": ["わかし・さわがし・スカパンク","古今東西ちょちょいのちょい","雨上がりのアイリス","Fighting My Way","Choo Choo Choo","Superlative","Feel Jewel Dream","Kira Kira","ナイワ","憧れをいっぱい","Sweet Magic","歌声は君いろ","Unhappy Light","桜フォトグラフ",
                 "かちドキ","SEARCH RIGHT","カタマリオンザドゥン","Star-mine","アイヴイ","極光","理論武装して","The Rolling Riceball","ENDLESS DANCE","標","みちなるひろがる","がむしゃらに行こう！","Campus mode!!"]
@@ -304,6 +534,7 @@
             {
                 "id": "09-02",
                 "name": "DAY2",
+                "name.i18n": "DAY2",
                 "date": "2026-03-01",
                 "songs": ["わかし・さわがし・スカパンク","キミとセミブルー","Yellow Big Bang!","SUPREMACY","Let's GO!! ICHI-NO-NI!!","Ride on Beat","白線","ミラクルナナウ(ﾟ∀ﾟ)！","金の斧、銀の斧、エメラルドの斧","ときめきのソルフェージュ","コントラスト","L.U.V","カクシタワタシ","ヨルニテ","Boom Boom Pow",
                 "かちドキ","SEARCH RIGHT","カタマリオンザドゥン","Star-mine","Luna say maybe","Howling over the World","ENDLESS DANCE","理論武装して","Our Chant","標","みちなるひろがる","初","Campus mode!!"]
@@ -313,16 +544,24 @@
     {
         "id": "live10",
         "name": "The 2nd Period H.I.F選抜試験",
-        "lives": [
+        "name.i18n": {
+            "ja": "The 2nd Period H.I.F選抜試験",
+            "en": "The 2nd Period H.I.F Selection Exam",
+            "ko": "The 2nd Period H.I.F 선발 시험",
+            "zh": "The 2nd Period H.I.F 选拔考试"
+        },
+        "acts": [
             {
                 "id": "10-01",
                 "name": "DAY1",
+                "name.i18n": "DAY1",
                 "date": "2026-05-16",
                 "songs": ["つよつよ最強エクササイズ","The Rolling Riceball","メクルメ","コントラスト","Boom Boom Pow","Fighting My Way","clumsy trick","L.U.V","Feel Jewel Dream","Fluorite","ときめきのソルフェージュ","Wonder Scale","キミとセミブルー","SUPREMACY","ミラクルナナウ(ﾟ∀ﾟ)！","Let's GO!! ICHI-NO-NI!!","標","ガラクタロード"]
             },
             {
                 "id": "10-02",
                 "name": "DAY2",
+                "name.i18n": "DAY2",
                 "date": "2026-05-17",
                 "songs": ["Choo Choo Choo","Our Chant","アイヴイ","Luna say maybe","白線","Tame-Lie-One-Step","ときめきエモーション","ヨルニテ","ツキノカメ","Yellow Big Bang!","世界一可愛い私","理論武装して","三分半の創世","古今東西ちょちょいのちょい","ENDLESS DANCE","仮装狂騒曲","ナイワ","標","ガラクタロード"]
             }
@@ -331,10 +570,12 @@
     {
         "id": "live11",
         "name": "The 2nd Period Hatsuboshi IDOL FESTIVAL",
-        "lives": [
+        "name.i18n": "The 2nd Period Hatsuboshi IDOL FESTIVAL",
+        "acts": [
             {
                 "id": "11-01",
                 "name": "DAY1",
+                "name.i18n": "DAY1",
                 "date": "2026-06-06",
                 "songs": ["Love & Joy","36℃ U・B・U","Wildest Flower","自己肯定感爆上げ↑↑しゅきしゅきソング","ガラクタロード","ミラクルナナウ(ﾟ∀ﾟ)！","ENDLESS DANCE","理論武装して","みちなるひろがる","雨上がりのアイリス","見て","ときめきエモーション","空と約束","桜フォトグラフ","赤裸々",
                 "SUGAR FLAVOR","Star-mine","冠菊","サンフェーデッド","三分半の創世","VEIL","Atmosphere","ナイワ","一体いつから","仮装狂騒曲","真っ白いページと水彩の主人公","キミとセミブルー","Campus mode!!","古今東西ちょちょいのちょい","標","初"]
@@ -342,6 +583,7 @@
             {
                 "id": "11-02",
                 "name": "DAY2",
+                "name.i18n": "DAY2",
                 "date": "2026-06-07",
                 "songs": ["見て","Star-mine","サンフェーデッド","SUPREMACY","White Night! White Wish!","Campus mode!!","Let's GO!! ICHI-NO-NI!!","がむしゃらに行こう！","36℃ U・B・U","みちなるひろがる","自己肯定感爆上げ↑↑しゅきしゅきソング","Atmosphere","SUGAR FLAVOR","雪解けに","雨上がりのアイリス",
                 "ときめきエモーション","MY STAGE","赤裸々","VEIL","理論武装して","Howling over the World","ハッピーミルフィーユ","古今東西ちょちょいのちょい","Wildest Flower","Love & Joy","真っ白いページと水彩の主人公","空と約束","一体いつから","標","初","ガラクタロード"]
@@ -351,22 +593,41 @@
     {
         "id": "live12",
         "name": "IDOL WORLD SUPER FESTIVAL 2026",
-        "lives": [
+        "name.i18n": "IDOL WORLD SUPER FESTIVAL 2026",
+        "acts": [
             {
                 "id": "12-01",
                 "name": "第一公演 -YAKUDOU-",
+                "name.i18n": {
+                    "ja":"第一公演 -YAKUDOU-",
+                    "en": "Show 1 -YAKUDOU-",
+                    "ko": "제1공연 -YAKUDOU-",
+                    "zh": "第一公演 -YAKUDOU-"
+                },
                 "date": "2026-07-24",
                 "songs": ["Choo Choo Choo","Love & Joy","小さな野望"]
             },
             {
                 "id": "12-02",
                 "name": "第二公演 -ZESSYOU-",
+                "name.i18n": {
+                    "ja": "第二公演 -ZESSYOU-",
+                    "en": "Show 2 -ZESSYOU-",
+                    "ko": "제2공연 -ZESSYOU-",
+                    "zh": "第二公演 -ZESSYOU-"
+                },
                 "date": "2026-07-25",
                 "songs": ["アイヴイ","三分半の創世","ENDLESS DANCE"]
             },
             {
                 "id": "12-03",
                 "name": "第三公演 -KYOUMEI-",
+                "name.i18n": {
+                    "ja": "第三公演 -KYOUMEI-",
+                    "en": "Show 3 -KYOUMEI-",
+                    "ko": "제3공연 -KYOUMEI-",
+                    "zh": "第三公演 -KYOUMEI-"
+                },
                 "date": "2026-07-26",
                 "songs": ["Fighting My Way","自己肯定感爆上げ↑↑しゅきしゅきソング","Campus mode!!","アイ NEED YOU (FOR WONDERFUL STORY)"]
             }
@@ -375,46 +636,94 @@
     {
         "id": "live13",
         "name": "LIVE TOUR -標-",
-        "lives": [
+        "name.i18n": {
+            "ja": "LIVE TOUR -標-",
+            "en": "LIVE TOUR -SHIRUBE-",
+            "ko": "LIVE TOUR -시루베-",
+            "zh": "LIVE TOUR -標-"
+        },
+        "acts": [
             {
                 "id": "13-01",
                 "name": "福井公演 DAY1",
+                "name.i18n": {
+                    "ja":"福井公演 DAY1",
+                    "en": "Fukui DAY1",
+                    "ko": "후쿠이 공연 DAY1",
+                    "zh": "福井公演 DAY1"
+                },
                 "date": "2026-08-20",
                 "songs": ["つよつよ最強エクササイズ","Wake up!!","36℃ U・B・U","Feel Jewel Dream","修楽旅行","Atmosphere","marble heart","The Rolling Riceball","L'Espoir","「ねえ、言っちゃうよ。」","clumsy trick","Sweet Magic","Fragile Heart","春と光","標","古今東西ちょちょいのちょい","Campus mode!!"]
             },
             {
                 "id": "13-02",
                 "name": "福井公演 DAY2",
+                "name.i18n": {
+                    "ja": "福井公演 DAY2",
+                    "en": "Fukui DAY2",
+                    "ko": "후쿠이 공연 DAY2",
+                    "zh": "福井公演 DAY2"
+                },
                 "date": "2026-08-21",
                 "songs": ["極光","L.U.V","Fluorite","グースーピー","修楽旅行","Top Secret","真っ白いページと水彩の主人公","歌声は君いろ","いつかのわたし","「ねえ、言っちゃうよ。」","金の斧、銀の斧、エメラルドの斧","重なる夜空の痕跡に","見て","白線","標","古今東西ちょちょいのちょい","ガラクタロード"]
             },
             {
                 "id": "13-03",
                 "name": "福岡公演 DAY1",
+                "name.i18n": {
+                    "ja":"福岡公演 DAY1",
+                    "en": "Fukuoka DAY1",
+                    "ko": "후쿠오카 공연 DAY1",
+                    "zh": "福冈公演 DAY1"
+                },
                 "date": "2026-09-05",
                 "songs": ["The Cute!!!","MY STAGE","サンフェーデッド","EGO","叶えたい、ことばかり","修楽旅行","神かわいい","nazonazo","アイヴイ","コントラスト","「ねえ、言っちゃうよ。」","Be proud","メクルメ","一体いつから","Try it now","クライアイ","Yellow Big Bang!","標","古今東西ちょちょいのちょい","ガラクタロード"]
             },
             {
                 "id": "13-04",
                 "name": "福岡公演 DAY2",
+                "name.i18n": {
+                    "ja": "福岡公演 DAY2",
+                    "en": "Fukuoka DAY2",
+                    "ko": "후쿠오카 공연 DAY2",
+                    "zh": "福冈公演 DAY2"
+                },
                 "date": "2026-09-06",
                 "songs": ["Fighting My Way","Luna say maybe","世界一可愛い私","光景","理論武装して","修楽旅行","ORDER FAKE","め","Boom Boom Pow","自己肯定感爆上げ↑↑しゅきしゅきソング","「ねえ、言っちゃうよ。」","三分半の創世","ふわふわ","コンテンポラリのダンス","Unhappy Light","Wildest Flower","クライアイ","標","古今東西ちょちょいのちょい","初"]
             },
             {
                 "id": "13-05",
                 "name": "岩手公演 DAY1",
+                "name.i18n": {
+                    "ja": "岩手公演 DAY1",
+                    "en": "Iwate DAY1",
+                    "ko": "이와테 공연 DAY1",
+                    "zh": "岩手公演 DAY1"
+                },
                 "date": "2026-09-22",
                 "songs": ["Superlative","Love & Joy","憧れをいっぱい","小さな野望","修楽旅行","Ride on Beat","Choo Choo Choo","海奏ララバイ","ワタシカワイイアヒルノコ","Cosmetic","たいせつなもの","カクシタワタシ","Wonder Scale","古今東西ちょちょいのちょい","標","Agitato","初"]
             },
             {
                 "id": "13-06",
                 "name": "岩手公演 DAY2",
+                "name.i18n": {
+                    "ja": "岩手公演 DAY2",
+                    "en": "Iwate DAY2",
+                    "ko": "이와테 공연 DAY2",
+                    "zh": "岩手公演 DAY2"
+                },
                 "date": "2026-09-23",
                 "songs": ["日々、発見的ステップ！","Tame-Lie-One-Step","ヨルニテ","Our Chant","修楽旅行","ツキノカメ","空と約束","Roar","Private Glitter","Kira Kira","ときめきのソルフェージュ","赤裸々","VEIL","古今東西ちょちょいのちょい","標","Agitato","Campus mode!!"]
             },
             {
                 "id": "13-07",
                 "name": "ファイナル公演 DAY1",
+                "name.i18n": {
+                    "ja": "ファイナル公演 DAY1",
+                    "en": "Final DAY1",
+                    "ko": "파이널 공연 DAY1",
+                    "zh": "最终公演 DAY1"
+                },
                 "date": "2026-11-07",
                 "songs": ["標","みちなるひろがる","神かわいい","クライアイ","ENDLESS DANCE","nazonazo","春と光","サンフェーデッド","ツキノカメ","Luna say maybe","キミとセミブルー","Feel Jewel Dream","「ねえ、言っちゃうよ。」","重なる夜空の痕跡に","空と約束",
                 "Star-mine","Private Glitter","いつかのわたし","SUGAR FLAVOR","Cosmetic","Agitato","慟哭のコンチェルト","ミラクルナナウ(ﾟ∀ﾟ)！","ハッピーミルフィーユ","仮装狂騒曲","修楽旅行","ガラクタロード","アンバランス","Campus mode!!","初"]
@@ -422,6 +731,12 @@
             {
                 "id": "13-08",
                 "name": "ファイナル公演 DAY2",
+                "name.i18n": {
+                    "ja": "ファイナル公演 DAY2",
+                    "en": "Final DAY2",
+                    "ko": "파이널 공연 DAY2",
+                    "zh": "最终公演 DAY2"
+                },
                 "date": "2026-11-08",
                 "songs": ["め","ミラクルナナウ(ﾟ∀ﾟ)！","ORDER FAKE","Roar","Howling over the World","ハッピーミルフィーユ","36℃ U・B・U","ワタシカワイイアヒルノコ","Agitato","雨上がりのアイリス","L'Espoir","Ride on Beat","濡羽色の薄明","「ねえ、言っちゃうよ。」","ときめきエモーション",
                 "FANTASTIC GATHERING!","クライアイ","海奏ララバイ","Fighting My Way","グースーピー","仮装狂騒曲","アンバランス","クロスファイア","白線","古今東西ちょちょいのちょい","修楽旅行","初","ガラクタロード","標"]

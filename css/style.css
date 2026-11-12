@@ -54,30 +54,31 @@ section{
 .info-card p{
     margin: 5px 0;
 }
-.live-list{
+.act-list {
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 15px;
 }
-.live-card{
+.act-card {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 6px #00000010;
     transition: transform 0.2s;
 }
-.live-card:hover{
+.act-card:hover {
+    cursor: pointer;
     transform: translateY(-3px);
 }
-.live-card h3{
+.act-card h3 {
     margin: 0 0 8px;
 }
-.live-date{
+.act-date {
     font-size: 14px;
 }
-.live-song-count{
+.act-song-count {
     font-size: 14px;
 }
-.live-checkbox{
+.act-checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -85,10 +86,35 @@ section{
     cursor: pointer;
     font-weight: bold;
 }
-.live-checkbox input{
+.act-checkbox input {
     width: 18px;
     height: 18px;
     cursor: pointer;
+}
+.show-set-list-button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 16px;
+    background-color: #5969a8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.set-list {
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    list-style-type: none;
+    display: none;
+    cursor: default;
+}
+.set-list-item {
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
 }
 #uncollected-list {
     background: white;
@@ -106,7 +132,7 @@ section{
     border-bottom: none;
 }
 @media (max-width: 600px) {
-    .live-list {
+    .act-list {
         grid-template-columns: 1fr;
     }
 
@@ -128,39 +154,39 @@ section{
 }
 
 /* 公演カード一覧 */
-.tour-section .live-list {
+.tour-section .act-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
 /* 公演名 */
-.live-card h4 {
+.act-card h4 {
     margin: 0 0 8px;
     font-size: 17px;
 }
 
 /* スマートフォン */
 @media (max-width: 600px) {
-    .tour-section .live-list {
+    .tour-section .act-list {
         grid-template-columns: 1fr;
     }
 }
-.live-summary {
+.act-summary {
     margin: 30px 0;
 }
 
-.live-summary h2 {
+.act-summary h2 {
     margin-bottom: 15px;
 }
 
-.live-summary-container {
+.act-summary-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.live-summary-card {
+.act-summary-card {
     background: white;
     padding: 20px 10px;
     border-radius: 10px;
@@ -168,7 +194,7 @@ section{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.live-summary-card p {
+.act-summary-card p {
     margin: 5px 0;
 }
 
@@ -179,7 +205,7 @@ section{
 }
 
 @media (max-width: 600px) {
-    .live-summary-container {
+    .act-summary-container {
         grid-template-columns: 1fr;
     }
 }
@@ -205,6 +231,6 @@ section{
 :lang(ko) header h1,
 :lang(ko) header li,
 :lang(ko) .tour-title,
-:lang(ko) .live-card h4 {
+:lang(ko) .act-card h4 {
     word-break: keep-all;
 }

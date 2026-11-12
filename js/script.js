@@ -1,6 +1,7 @@
 const STORAGE_KEY = "liveCollectionParticipated";
 const LANG_KEY = "liveCollectionLang";
 const LANGS = ["ja", "en", "ko", "zh"];
+const DEFAULT_LANG = LANGS[0];
 
 let lang = detectLang();
 
@@ -12,16 +13,20 @@ function detectLang() {
         const base = String(tag).toLowerCase().split("-")[0];
         if (LANGS.includes(base)) return base;
     }
-    return "en";
+    return DEFAULT_LANG;
 }
 
 function t(key, vars = {}) {
     return I18N.ui[lang][key].replace(/\{(\w+)\}/g, (_, name) => vars[name]);
 }
 
-// ツアー名・公演名。翻訳がなければ原文のまま
-function trName(name) {
-    return lang === "ja" ? name : I18N.names[name]?.[lang] ?? name;
+function getName(o) {
+    // The object may have "name.i18n" property, which contains translation maps for different languages.
+    // If it does, try to get the name in the current language. If current language is not available, fall back to the default language.
+    // In some case, the property may be a single string. Then use it as is. (POTENTIAL BUG: we cannot sure it is a valid, safe string.)
+    // If the object doesn't have "name.i18n" property, fall back to "name" property.
+    // If neither is available, return undefined.
+    return o["name.i18n"]?.[lang] ?? o["name.i18n"]?.[DEFAULT_LANG] ?? o["name.i18n"] ?? o["name"] ?? undefined;
 }
 
 function applyLanguage() {
@@ -35,9 +40,9 @@ function applyLanguage() {
     select.setAttribute("aria-label", t("language"));
 }
 
-let lives=[];
+let tours = [];
 
-let participatedLives= new Set();
+let attendedActs = new Set();
 
 document.addEventListener("DOMContentLoaded",async() => {
     applyLanguage();
@@ -46,7 +51,7 @@ document.addEventListener("DOMContentLoaded",async() => {
         lang = event.target.value;
         localStorage.setItem(LANG_KEY, lang);
         applyLanguage();
-        if (lives.length > 0) {
+        if (tours.length > 0) {
             renderLives();
             updateResults();
         }
@@ -56,45 +61,45 @@ document.addEventListener("DOMContentLoaded",async() => {
 
     if (saved) {
         try {
-            participatedLives = new Set(JSON.parse(saved));
+            attendedActs = new Set(JSON.parse(saved));
         } catch (error) {
             console.error("保存データの読み込みに失敗しました", error);
         }
     }
 
     try{
-        const response = await fetch("./data/lives.json");
+        const response = await fetch("./data/gakuen.json");
 
         if(!response.ok){
             throw new Error("ライブ情報の取得に失敗しました");
         }
-        lives = await response.json();
+        tours = await response.json();
 
-        const validIds = new Set(
-            lives.flatMap(tour =>
-                tour.lives.map(live => live.id)
+        const validActIds = new Set(
+            tours.flatMap(tour =>
+                tour.acts.map(act => act.id)
             )
         );
 
-        participatedLives = new Set(
-            [...participatedLives].filter(id => validIds.has(id))
+        attendedActs = new Set(
+            [...attendedActs].filter(id => validActIds.has(id))
         );
 
         renderLives();
         updateResults();
     } catch(error){
         console.error(error);
-        document.getElementById("live-list").textContent=t("loadError")
+        document.getElementById("act-list").textContent=t("loadError")
     } 
 });
 
 function renderLives() {
 
-    const container = document.getElementById("live-list");
+    const container = document.getElementById("act-list");
 
     container.innerHTML = "";
 
-    lives.forEach(tour => {
+    tours.forEach(tour => {
 
         // ツアー全体のセクション
         const section = document.createElement("section");
@@ -103,34 +108,34 @@ function renderLives() {
         // ツアータイトル
         const title = document.createElement("h3");
         title.className = "tour-title";
-        title.textContent = trName(tour.name);
+        title.textContent = getName(tour);
 
         // 公演カード一覧
         const cardList = document.createElement("div");
-        cardList.className = "live-list";
+        cardList.className = "act-list";
 
-        tour.lives.forEach(live => {
+        tour.acts.forEach(act => {
 
             const card = document.createElement("div");
-            card.className = "live-card";
+            card.className = "act-card";
 
             const liveTitle = document.createElement("h4");
-            liveTitle.textContent = trName(live.name);
+            liveTitle.textContent = getName(act);
 
             const date = document.createElement("p");
-            date.className = "live-date";
-            date.textContent = live.date;
+            date.className = "act-date";
+            date.textContent = act.date;
 
             const count = document.createElement("p");
-            count.className = "live-song-count";
-            count.textContent = t("songCount", { n: live.songs.length });
+            count.className = "act-song-count";
+            count.textContent = t("songCount", { n: act.songs.length });
 
             const label = document.createElement("label");
-            label.className = "live-checkbox";
+            label.className = "act-checkbox";
 
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
-            checkbox.checked = participatedLives.has(live.id);
+            checkbox.checked = attendedActs.has(act.id);
 
             const labelText = document.createElement("span");
             labelText.textContent = t("attendedCheck");
@@ -138,14 +143,14 @@ function renderLives() {
             checkbox.addEventListener("change", () => {
 
                 if (checkbox.checked) {
-                    participatedLives.add(live.id);
+                    attendedActs.add(act.id);
                 } else {
-                    participatedLives.delete(live.id);
+                    attendedActs.delete(act.id);
                 }
 
                 localStorage.setItem(
                     STORAGE_KEY,
-                    JSON.stringify([...participatedLives])
+                    JSON.stringify([...attendedActs])
                 );
 
                 updateResults();
@@ -153,7 +158,41 @@ function renderLives() {
 
             label.append(checkbox, labelText);
 
-            card.append(liveTitle, date, count, label);
+            const showSetListButton = document.createElement("button");
+            showSetListButton.className = "show-set-list-button";
+            showSetListButton.textContent = t("showSetlist");
+
+            const setList = document.createElement("ul");
+            setList.className = "set-list";
+
+            act.songs.forEach(song => {
+                const setListItem = document.createElement("li");
+                setListItem.className = "set-list-item";
+                setListItem.textContent = song;
+                setList.appendChild(setListItem);
+            });
+
+            setList.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent the card click event from firing
+            });
+
+            showSetListButton.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent the card click event from firing
+                if (setList.style.display === "none" || setList.style.display === "") {
+                    setList.style.display = "block";
+                    showSetListButton.textContent = t("hideSetlist");
+                } else {
+                    setList.style.display = "none";
+                    showSetListButton.textContent = t("showSetlist");
+                }
+            });
+
+            card.append(liveTitle, date, count, label, showSetListButton, setList);
+
+            card.addEventListener("click", () => {
+                checkbox.checked = !checkbox.checked;
+                checkbox.dispatchEvent(new Event("change"));
+            });
 
             cardList.appendChild(card);
         });
@@ -172,15 +211,15 @@ function updateResults() {
     // 参加したライブの楽曲
     const collectedSongs = new Set();
 
-    lives.forEach(tour => {
+    tours.forEach(tour => {
 
-        tour.lives.forEach(live => {
+        tour.acts.forEach(act => {
 
-            live.songs.forEach(song => {
+            act.songs.forEach(song => {
 
                 allSongs.add(song);
 
-                if (participatedLives.has(live.id)) {
+                if (attendedActs.has(act.id)) {
                     collectedSongs.add(song);
                 }
 
@@ -198,7 +237,7 @@ function updateResults() {
     // 数値
     const total = allSongs.size;
     const collected = collectedSongs.size;
-    const uncollected = uncollectedSongs.length;
+    const uncollected = uncollectedSongs.size;
 
     // 回収率
     const rate = total === 0
@@ -209,24 +248,17 @@ function updateResults() {
     renderUncollectedSongs(uncollectedSongs);
 
     // ライブ参加状況の集計
-    const totalLiveCount = lives.reduce(
-        (total, tour) => total + tour.lives.length,
+    const totalActsCount = tours.reduce(
+        (total, tour) => total + tour.acts.length,
         0
     );
 
-    const participatedLiveCount = participatedLives.size;
+    const attendedActsCount = attendedActs.size;
+    const unattendedActsCount = totalActsCount - attendedActsCount;
 
-    const unparticipatedLiveCount =
-        totalLiveCount - participatedLiveCount;
-
-    document.getElementById("total-live-count").textContent =
-        totalLiveCount;
-
-    document.getElementById("participated-live-count").textContent =
-        participatedLiveCount;
-
-    document.getElementById("unparticipated-live-count").textContent =
-        unparticipatedLiveCount;
+    document.getElementById("total-act-count").textContent = totalActsCount;
+    document.getElementById("attended-act-count").textContent = attendedActsCount;
+    document.getElementById("unattended-act-count").textContent = unattendedActsCount;
 
     // HTMLに反映
     const totalCount = allSongs.size;
