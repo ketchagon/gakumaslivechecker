@@ -7,8 +7,17 @@ body{
     font-family: sans-serif;
 }
 header{
+    position: relative;
     text-align: center;
     padding: 30px 15px;
+}
+.lang-select{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font: inherit;
+    font-size: 14px;
+    padding: 4px 6px;
 }
 ul{
   display: inline-block;
@@ -190,4 +199,12 @@ section{
 
 .share-x-button:hover {
     opacity: 0.75;
+}
+
+/* 韓国語は文節（単語）単位で改行する */
+:lang(ko) header h1,
+:lang(ko) header li,
+:lang(ko) .tour-title,
+:lang(ko) .live-card h4 {
+    word-break: keep-all;
 }

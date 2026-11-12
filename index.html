@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>
         学マスライブ回収率チェッカー
     </title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
     
     <!-- OGP設定 -->
@@ -25,69 +27,76 @@
 </head>
 <body>
     <header>
-        <h1>学マスライブ回収率チェッカー</h1>
+        <select id="lang-select" class="lang-select" aria-label="言語">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+            <option value="zh">中文</option>
+        </select>
+        <h1 data-i18n="title">学マスライブ回収率チェッカー</h1>
         <ul>
-            <li>このページでは学マスのライブの参加率や曲の回収状況、未回収曲の絞り込みができます</li>
-            <li>公式とは全く関係ありません</li>
-            <li>一部イベントや楽曲については入れたり入れてなかったりしています</li>
-            <li>バージョンは言い出したらキリがないのでまとめてます</li>
-            <li>ご意見、不具合、文句、お気持ちなどは製作者まで</li>
+            <li data-i18n="intro1">このページでは学マスのライブの参加率や曲の回収状況、未回収曲の絞り込みができます</li>
+            <li data-i18n="intro2">公式とは全く関係ありません</li>
+            <li data-i18n="intro3">一部イベントや楽曲については入れたり入れてなかったりしています</li>
+            <li data-i18n="intro4">バージョンは言い出したらキリがないのでまとめてます</li>
+            <li data-i18n="intro5">ご意見、不具合、文句、お気持ちなどは製作者まで</li>
         </ul>
-        <p>製作者:<a href = "https://x.com/ketchagon" target="_blank" rel="noopener noreferrer">@ketchagon</a></p>
+        <p><span data-i18n="creator">製作者:</span><a href = "https://x.com/ketchagon" target="_blank" rel="noopener noreferrer">@ketchagon</a></p>
     </header>
     <main>
         <section class="summary">
-            <h2>楽曲回収状況</h2>
+            <h2 data-i18n="songStatus">楽曲回収状況</h2>
             <section class="container">
                 <div class="info-card">
                     <p class="summary-num" id="total">0</p>
-                    <p>全楽曲</p>
+                    <p data-i18n="totalSongs">全楽曲</p>
                 </div>
                 <div class="info-card">
                     <p class="summary-num" id="collected">0</p>
-                    <p>回収済み</p>
+                    <p data-i18n="collected">回収済み</p>
                 </div>
                 <div class="info-card">
                     <p class="summary-num" id="uncollected">0</p>
-                    <p>未回収</p>
+                    <p data-i18n="uncollected">未回収</p>
                 </div>
                 <div class="info-card">
                     <p class="summary-num" id="progress-text">0%</p>
-                    <p>回収率</p>
+                    <p data-i18n="rate">回収率</p>
                 </div>
             </section>
             <section class="live-summary">
-                <h2>ライブ参加状況</h2>
+                <h2 data-i18n="liveStatus">ライブ参加状況</h2>
                 <div class="live-summary-container">
                     <div class="live-summary-card">
                         <p class="summary-num" id="total-live-count">0</p>
-                        <p>全ライブ</p>
+                        <p data-i18n="totalLives">全ライブ</p>
                     </div>
 
                     <div class="live-summary-card">
                         <p class="summary-num" id="participated-live-count">0</p>
-                        <p>参加</p>
+                        <p data-i18n="attended">参加</p>
                     </div>
 
                     <div class="live-summary-card">
                         <p class="summary-num" id="unparticipated-live-count">0</p>
-                        <p>未参加</p>
+                        <p data-i18n="notAttended">未参加</p>
                     </div>
                 </div>
             </section>
-            <button id="share-x-button" class="share-x-button">𝕏  回収率をXに投稿する</button>
+            <button id="share-x-button" class="share-x-button" data-i18n="share">𝕏  回収率をXに投稿する</button>
             <section class="live-section">
-                <h2>ライブ一覧</h2>
+                <h2 data-i18n="liveList">ライブ一覧</h2>
                 <div id="live-list" class="live-list">
-                    <p>読み込み中</p>
+                    <p data-i18n="loading">読み込み中</p>
                 </div>
             </section>
             <section class="song-section">
-                <h2>未回収楽曲</h2>
+                <h2 data-i18n="uncollectedSongs">未回収楽曲</h2>
                 <div id="uncollected-list">
-                    <p>読み込み中</p>
+                    <p data-i18n="loading">読み込み中</p>
                 </div>
             </section>
         </section>
     </main>
 </body>
+</html>
