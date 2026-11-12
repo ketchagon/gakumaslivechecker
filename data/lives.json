@@ -31,7 +31,7 @@
                 "id": "01-05",
                 "name": "初声公演 渋谷公演 夜",
                 "date": "2024-08-25",
-                "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","Unhappy Light","Howling over the World","冠菊"]
+                "songs": ["初","Campus mode!!","Fighting My Way","Luna say maybe","世界一可愛い私","Boom Boom Pow","Yellow Big Bang!","アイヴイ","キミとセミブルー","Unhappy Light","EGO","Howling over the World","冠菊"]
             },
             {
                 "id": "01-06",
@@ -151,7 +151,7 @@
                 "id": "01-25",
                 "name": "初陣公演 東京追加公演 夜",
                 "date": "2025-07-04",
-                "songs": ["初","Campus mode!!","The Rolling Riceball","ツキノカメ","小さな野望","Our Chant","グースーピー","Superlative","ヨルニテ","Cosmetic","金の斧、銀の斧、エメラルドの斧","ENDLESS DANCE","White Night! White Wish!","Star-mine"]
+                "songs": ["初","Campus mode!!","The Rolling Riceball","ツキノカメ","小さな野望","Our Chant","グースーピー","Superlative","ヨルニテ","Choo Choo Choo","金の斧、銀の斧、エメラルドの斧","ENDLESS DANCE","White Night! White Wish!","Star-mine"]
             }
         ]
     },
@@ -262,13 +262,13 @@
                 "id": "07-01",
                 "name": "DAY1",
                 "date": "2025-09-20",
-                "songs": ["初","初星体操第一","SUPREMACY","Let's GO!! ICHI-NO-NI!!","ナイワ","つよつよ最強エクササイズ","ハッピーミルフィーユ","仮装狂騒曲","がむしゃらに行こう！","Yellow Big Bang!","ENDLESS DANCE","Howling over the World","ミラクルナナウ(ﾟ∀ﾟ)！","EGO","キミとセミブルー","Campus mode!!"]
+                "songs": ["標","初星体操第一","SUPREMACY","Let's GO!! ICHI-NO-NI!!","ナイワ","つよつよ最強エクササイズ","ハッピーミルフィーユ","仮装狂騒曲","がむしゃらに行こう！","Yellow Big Bang!","ENDLESS DANCE","Howling over the World","ミラクルナナウ(ﾟ∀ﾟ)！","EGO","キミとセミブルー","Campus mode!!"]
             },
             {
                 "id": "07-02",
                 "name": "DAY2",
                 "date": "2025-09-21",
-                "songs": ["標","古今東西ちょちょいのちょい","SUPREMACY","Our Chant","グースーピー","世界一可愛い私","Let's GO!! ICHI-NO-NI!!","仮装狂騒曲","白線","clumsy trick","ENDLESS DANCE","ナイワ","初","SUPREMACY","Campus mode!!","理論武装して"]
+                "songs": ["標","初星体操第一","古今東西ちょちょいのちょい","SUPREMACY","Our Chant","グースーピー","世界一可愛い私","Let's GO!! ICHI-NO-NI!!","仮装狂騒曲","白線","clumsy trick","ENDLESS DANCE","ナイワ","初","SUPREMACY","Campus mode!!","理論武装して"]
             }
         ]
     },
@@ -286,7 +286,7 @@
                 "id": "08-02",
                 "name": "DAY2",
                 "date": "2025-12-14",
-                "songs": ["初","つよつよ最強エクササイズ","仮装狂騒曲","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊","ENDLESS DANCE","Star-mine","キミとセミブルー","アイ NEED YOU (FOR WONDERFUL STORY)"]
+                "songs": ["初","つよつよ最強エクササイズ","仮装狂騒曲","ミラクルナナウ(ﾟ∀ﾟ)！","冠菊","ENDLESS DANCE","Star-mine","Campus mode!!","キミとセミブルー","アイ NEED YOU (FOR WONDERFUL STORY)"]
             }
         ]
     },
@@ -386,7 +386,7 @@
                 "id": "13-02",
                 "name": "福井公演 DAY2",
                 "date": "2026-08-21",
-                "songs": ["極光","L.U.V","Fluorite","グースーピー","修楽旅行","Top Secret","真っ白いページと水彩の主人公","歌声は君いろ","いつかのわたし","「ねえ、言っちゃうよ。」","金の斧、銀の斧、エメラルドの斧","重なる夜空の痕跡に","見て","標","古今東西ちょちょいのちょい","ガラクタロード"]
+                "songs": ["極光","L.U.V","Fluorite","グースーピー","修楽旅行","Top Secret","真っ白いページと水彩の主人公","歌声は君いろ","いつかのわたし","「ねえ、言っちゃうよ。」","金の斧、銀の斧、エメラルドの斧","重なる夜空の痕跡に","見て","白線","標","古今東西ちょちょいのちょい","ガラクタロード"]
             },
             {
                 "id": "13-03",
