@@ -8,7 +8,7 @@
             "ko": "DEBUT LIVE 하지메 TOUR",
             "zh": "DEBUT LIVE 初 TOUR"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "01-01",
                 "name": "初声公演 名古屋公演",
@@ -315,7 +315,7 @@
         "id": "live02",
         "name": "THE IDOLM@STER EXPO",
         "name.i18n": "THE IDOLM@STER EXPO",
-        "lives": [
+        "acts": [
             {
                 "id": "02-01",
                 "name": "エキスポミニライブ DAY1",
@@ -351,7 +351,7 @@
             "ko": "리스아니! 라이브 2025",
             "zh": "LISANI! LIVE 2025"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "03-01",
                 "name": "SATURDAY STAGE",
@@ -364,7 +364,7 @@
         "id": "live04",
         "name": "The 1st Period",
         "name.i18n": "The 1st Period",
-        "lives": [
+        "acts": [
             {
                 "id": "04-01",
                 "name": "Spotlight Star DAY1",
@@ -403,7 +403,7 @@
         "id": "live05",
         "name": "ORCHESTRA CONCERT SYMPHONY OF BRILLIANT STARS",
         "name.i18n": "ORCHESTRA CONCERT SYMPHONY OF BRILLIANT STARS",
-        "lives": [
+        "acts": [
             {
                 "id": "05-01",
                 "name": "昼公演",
@@ -439,7 +439,7 @@
             "ko": "하츠보시 학원 방송부 공개 녹음 2025 ~방송부의 우아하고 경쾌하고 떠들썩한 하루~",
             "zh": "初星学园广播部 公开录音 2025 ~广播部优雅轻快又热闹的一天~"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "06-01",
                 "name": "第1部:放送部の優雅で大騒ぎな1日",
@@ -475,7 +475,7 @@
             "ko": "반 대항 하츠보시 대운동회",
             "zh": "班级对抗初星大运动会"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "07-01",
                 "name": "DAY1",
@@ -496,7 +496,7 @@
         "id": "live08",
         "name": "M@STARS OF IDOL WORLD 2025",
         "name.i18n": "M@STARS OF IDOL WORLD 2025",
-        "lives": [
+        "acts": [
             {
                 "id": "08-01",
                 "name": "DAY1",
@@ -522,7 +522,7 @@
             "ko": "하츠보시 음악제",
             "zh": "初星音乐祭"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "09-01",
                 "name": "DAY1",
@@ -550,7 +550,7 @@
             "ko": "The 2nd Period H.I.F 선발 시험",
             "zh": "The 2nd Period H.I.F 选拔考试"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "10-01",
                 "name": "DAY1",
@@ -571,7 +571,7 @@
         "id": "live11",
         "name": "The 2nd Period Hatsuboshi IDOL FESTIVAL",
         "name.i18n": "The 2nd Period Hatsuboshi IDOL FESTIVAL",
-        "lives": [
+        "acts": [
             {
                 "id": "11-01",
                 "name": "DAY1",
@@ -594,7 +594,7 @@
         "id": "live12",
         "name": "IDOL WORLD SUPER FESTIVAL 2026",
         "name.i18n": "IDOL WORLD SUPER FESTIVAL 2026",
-        "lives": [
+        "acts": [
             {
                 "id": "12-01",
                 "name": "第一公演 -YAKUDOU-",
@@ -642,7 +642,7 @@
             "ko": "LIVE TOUR -시루베-",
             "zh": "LIVE TOUR -標-"
         },
-        "lives": [
+        "acts": [
             {
                 "id": "13-01",
                 "name": "福井公演 DAY1",
